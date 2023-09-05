@@ -19,3 +19,16 @@ JComponent
 uses to draw anything
 use 2d analogs or Graphics
 Lines, Points
+check examples in package
+
+ActionListener
+we need: make JPanel -> make JButton -> add button to panel -> make ActionListener -> add listener to button
+
+JPanel
+it is a container that can store a group of components. The main task of JPanel is to organize components, various layouts can be set in JPanel which provide better organization of components
+
+JButton
+just button
+
+ActionListener
+uses to listen action on button
