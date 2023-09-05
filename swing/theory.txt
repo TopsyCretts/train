@@ -32,3 +32,30 @@ just button
 
 ActionListener
 uses to listen action on button
+
+EventHandler
+analog of ActionListener 
+check example in package
+
+LookAndFeel
+just for UI styles
+
+WindowListener
+we can use this interface and override methods but also we can use abstract class WindowAdapter
+jFrame.addWindowListener(new WindowAdapter() {
+            @Override
+            public void windowClosing(WindowEvent e) {
+                do smth
+            }
+        });
+
+
+Actions
+check example in package
+
+KeyStroke 
+hot keys to do smth also we need use InputMap to choose focus for example
+check example int package in Actions
+make keystroke -> make InputMap -> initalize InputMap with jPanel and JComponent -> put into InputMap keystroke and name object -> make ActionMap -> put into ActionMap object and Action
+
+check example in ActionExamples
