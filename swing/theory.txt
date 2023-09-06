@@ -3,9 +3,9 @@ it is main class of swing.
 we should set name and set close operation of it.
 
 ToolKit 
-this class we use to get useful intruments to work with current device, for example to get screensize
+this class we use to get useful instruments to work with current device, for example to get screensize
 
-Dimention
+Dimension
 use it to get width and height
 
 Image
