@@ -5,7 +5,7 @@ import java.awt.*;
 import java.awt.event.ActionEvent;
 import java.io.IOException;
 
-public class ActionsExample {
+public class ActionsAndKeyStrokeExample {
     static JFrame frame;
     static JPanel jPanel;
 
