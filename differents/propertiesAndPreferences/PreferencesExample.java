@@ -1,4 +1,4 @@
-package differents;
+package differents.propertiesAndPreferences;
 
 import java.util.prefs.Preferences;
 

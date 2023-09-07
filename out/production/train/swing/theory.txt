@@ -73,6 +73,10 @@ JScrollPane - uses to work with JTextArea
 check example in package
 
 
-JCheckBox, JRadioButton and Group, Border and ComboBox
+JCheckBox, JRadioButton and Group, Border and ComboBox, Slider
 uses for multiple choice
 check example
+
+Menu
+check example
+

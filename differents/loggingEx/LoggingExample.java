@@ -1,6 +1,9 @@
 package differents.loggingEx;
 
 import java.io.IOException;
+import java.sql.Time;
+import java.time.LocalDate;
+import java.util.Date;
 import java.util.logging.*;
 
 public class LoggingExample {
@@ -16,15 +19,15 @@ public class LoggingExample {
         logger.log(Level.INFO, "fine");
 
         //ConsoleHandler consoleHandler = new ConsoleHandler();
-        FileHandler fileHandler = new FileHandler();
+        FileHandler fileHandler = new FileHandler("%h/IdeaProjects/train/differents/loggingEx/log.txt");
         fileHandler.setFilter(new MyFilter());
+        fileHandler.setFormatter(new myFormatter());
         logger.addHandler(fileHandler);
         //StreamHandler streamHandler = new StreamHandler();
         //SocketHandler socketHandler = new SocketHandler();
         //logger.setUseParentHandlers(false);
         logger.info("info message");
         logger.info("info not logged");
-
 
     }
     static class MyFilter implements Filter{
@@ -33,10 +36,11 @@ public class LoggingExample {
             return record.getMessage().endsWith("logged");
         }
     }
-    static class Formatter extends java.util.logging.Formatter{
+    static class myFormatter extends Formatter{
         @Override
         public String format(LogRecord record) {
-            return record.getLevel()+": "+record.getMessage();
+            Date date = new Date();
+            return record.getLevel()+": "+record.getMessage()+" "+date;
         }
     }
 }

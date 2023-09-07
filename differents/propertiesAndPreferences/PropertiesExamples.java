@@ -1,4 +1,4 @@
-package differents;
+package differents.propertiesAndPreferences;
 
 import java.io.File;
 import java.io.FileReader;
