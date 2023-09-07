@@ -23,7 +23,6 @@ public class moveImage {
             @Override
             public void mouseClicked(MouseEvent e) {
                 super.mouseClicked(e);
-
                     myComponent.x = e.getX();
                     myComponent.y = e.getY();
                     myComponent.repaint();

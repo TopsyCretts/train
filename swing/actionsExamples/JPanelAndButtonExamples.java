@@ -1,4 +1,4 @@
-package swing;
+package swing.actionsExamples;
 
 import swing.JComponentExamples.Main;
 

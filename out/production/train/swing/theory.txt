@@ -57,5 +57,22 @@ KeyStroke
 hot keys to do smth also we need use InputMap to choose focus for example
 check example int package in Actions
 make keystroke -> make InputMap -> initalize InputMap with jPanel and JComponent -> put into InputMap keystroke and name object -> make ActionMap -> put into ActionMap object and Action
-
 check example in ActionExamples
+
+MouseListener
+check example in package
+
+TextFields
+
+JTextField
+just text field
+JLabel - just label
+JPasswordFiels - like usual textfield but for passwords
+JTextArea - are where we can write text. 1st param - lines, 2nd - columns
+JScrollPane - uses to work with JTextArea
+check example in package
+
+
+JCheckBox, JRadioButton and Group, Border and ComboBox
+uses for multiple choice
+check example

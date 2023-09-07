@@ -1,4 +1,6 @@
-package swing;
+package swing.actionsExamples;
+
+import swing.MyFrame;
 
 import javax.swing.*;
 import java.awt.event.ActionEvent;
