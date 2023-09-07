@@ -11,9 +11,9 @@ public class CheckRadioBorderSlidersExamples {
         JPanel jPanel = new JPanel();
         jFrame.add(jPanel);
 
-        jPanel.add(new JCheckBox("checkbox label")); //CheckBoxExample
+        jPanel.add(new JCheckBox("checkbox label"));
 
-        JRadioButton b1 = new JRadioButton("one"); //RadioButton example
+        JRadioButton b1 = new JRadioButton("one");
         b1.setSelected(true);
         JRadioButton b2 = new JRadioButton("two");
 
@@ -23,10 +23,10 @@ public class CheckRadioBorderSlidersExamples {
         jPanel.add(b1);
         jPanel.add(b2);
 
-        Border border = BorderFactory.createEtchedBorder(Color.BLACK, Color.RED); //BorderExample
+        Border border = BorderFactory.createEtchedBorder(Color.BLACK, Color.RED);
         Border titledBorder = BorderFactory.createTitledBorder(border, "title");
 
-        JComboBox<String> comboBox = new JComboBox<>(); //ComboBoxExample
+        JComboBox<String> comboBox = new JComboBox<>();
         comboBox.insertItemAt("red", 0);
         comboBox.insertItemAt("black", 1);
         comboBox.insertItemAt("blue", 2);
@@ -45,7 +45,7 @@ public class CheckRadioBorderSlidersExamples {
         });
         jPanel.add(comboBox);
 
-        JSlider jSlider = new JSlider(0, 100, 50); //SliderExample
+        JSlider jSlider = new JSlider(0, 100, 50);
         jSlider.setMinorTickSpacing(5);
         jSlider.setMajorTickSpacing(10);
         jSlider.setPaintTicks(true);
