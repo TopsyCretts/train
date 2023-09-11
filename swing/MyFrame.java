@@ -18,8 +18,6 @@ public class MyFrame {
         Toolkit toolkit = Toolkit.getDefaultToolkit();
         Dimension dimension = toolkit.getScreenSize();
         frame.setBounds((dimension.width - width) / 2, (dimension.height - height) / 2, width, height);
-        BufferedImage image = ImageIO.read(new File("swing\\img\\strb.jpg"));
-        frame.setIconImage(image);
         return frame;
     }
 }
