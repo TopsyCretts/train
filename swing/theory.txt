@@ -80,3 +80,14 @@ check example
 Menu
 check example
 
+
+Layout
+FlowLayout - every item goes after last one
+BorderLayout - 5 zones: 
+                      North
+
+               West   Center    East
+
+                      South
+GridLayout - like table. calculator apps.
+GridBagLayout - check example
