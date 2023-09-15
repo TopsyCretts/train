@@ -1,4 +1,4 @@
-package awt;
+package awt.drawing;
 
 import swing.MyFrame;
 
