@@ -1,4 +1,4 @@
-package awt;
+package awt.BufferExamples;
 
 import java.awt.*;
 import java.awt.datatransfer.Clipboard;
@@ -7,7 +7,7 @@ import java.awt.datatransfer.StringSelection;
 import java.awt.datatransfer.UnsupportedFlavorException;
 import java.io.IOException;
 
-public class Buffer {
+public class BufferText {
     public static void main(String[] args) throws InterruptedException, IOException, UnsupportedFlavorException {
         Clipboard clipboard = Toolkit.getDefaultToolkit().getSystemClipboard();
         StringSelection stringSelection = new StringSelection("blabla");

@@ -25,6 +25,7 @@ public class Transparency {
             Rectangle2D rectangle2D2 = new Rectangle2D.Double(200,100,100,100);
             Color color2 = new Color(0f,0f,0f, 0.5f);
             g2.setColor(color2);
+            g2.setComposite(AlphaComposite.SrcOver);
             g2.fill(rectangle2D2);
 
             Rectangle2D rectangle2D3 = new Rectangle2D.Double(300,100,100,100);
