@@ -1,0 +1,1 @@
+memberSearchIndex = [{"p":"differents.javadocEx","c":"jdEx","l":"jdEx()","u":"%3Cinit%3E()"},{"p":"differents.javadocEx","c":"jdEx","l":"main(String[])","u":"main(java.lang.String[])"},{"p":"differents.javadocEx","c":"OtherClass","l":"OtherClass()","u":"%3Cinit%3E()"}];updateSearchResults();
