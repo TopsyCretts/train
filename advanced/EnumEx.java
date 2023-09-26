@@ -4,7 +4,7 @@ public class EnumEx {
     //enums extend of Enum class
     //enums can implement
     //constructor can't be public or protected
-    // we cant use enum as method local class
+    // we can't use enum as method local class
 
     public static void main(String[] args) {
         System.out.println(Level.BEGINNER);
