@@ -1,9 +1,6 @@
 package xml;
 
-import org.w3c.dom.Document;
-import org.w3c.dom.Element;
-import org.w3c.dom.Node;
-import org.w3c.dom.NodeList;
+import org.w3c.dom.*;
 import org.xml.sax.SAXException;
 
 import javax.xml.parsers.DocumentBuilder;
@@ -13,6 +10,9 @@ import java.io.File;
 import java.io.IOException;
 
 public class DomEx {
+
+    private static Node node;
+
     public static void main(String[] args) throws ParserConfigurationException, IOException, SAXException {
         DocumentBuilderFactory factory = DocumentBuilderFactory.newInstance();
         DocumentBuilder builder = factory.newDocumentBuilder();
@@ -34,7 +34,11 @@ public class DomEx {
 
     public static void printElements(NodeList nodeList) {
         for (int i = 0; i < nodeList.getLength(); i++) {
-            if (nodeList.item(i) instanceof Element) {
+            node = nodeList.item(i);
+            if (node instanceof Element) {
+                printContent(node);
+                printAttributes(node);
+
                 System.out.println(((Element) nodeList.item(i)).getTagName());
                 if (((Element) nodeList.item(i)).getTagName().equals("book")){
                     System.out.println(((Element) nodeList.item(i)).getAttribute("pages"));
@@ -43,6 +47,25 @@ public class DomEx {
                     printElements(nodeList.item(i).getChildNodes());
                 }
             }
+        }
+    }
+    public static void printContent(Node node){
+        String value = "";
+        if (!node.getTextContent().trim().isEmpty() && !((Text)node.getFirstChild()).getData().trim().isEmpty()
+                &&!((Text) node.getFirstChild()).getData().trim().equals("\n")){
+            Text text = (Text) node.getFirstChild();
+            value = "=" + text.getData().trim();
+            System.out.println(node.getNodeName()+value);
+
+        }
+    }
+    public static void printAttributes(Node node){
+        NamedNodeMap nodeMap = node.getAttributes();
+        for (int i = 0; i < nodeMap.getLength(); i++) {
+            Node attribute = nodeMap.item(i);
+            String name = attribute.getNodeName();
+            String value = attribute.getNodeValue();
+            System.out.println("Attribute - "+name+". Value: "+value);
         }
     }
 }
