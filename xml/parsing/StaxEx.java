@@ -1,4 +1,4 @@
-package xml;
+package xml.parsing;
 
 import javax.xml.stream.XMLInputFactory;
 import javax.xml.stream.XMLStreamException;
