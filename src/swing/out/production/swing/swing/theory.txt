@@ -1,0 +1,82 @@
+JFrame 
+it is main class of swing. 
+we should set name and set close operation of it.
+
+ToolKit 
+this class we use to get useful instruments to work with current device, for example to get screensize
+
+Dimension
+use it to get width and height
+
+Image
+BufferedImage image = ImageIO.read(new File("C:\\Users\\User\\Desktop\\java\\swing\\img\\strb.jpg"));
+
+Font 
+this is font XD
+to get massive of fonts we can use GraphicalEnviroment.getLocalGraphicalEnviroment.getAvailableFontsFamilyNames();
+
+JComponent
+uses to draw anything
+use 2d analogs or Graphics
+Lines, Points
+check examples in package
+
+ActionListener
+we need: make JPanel -> make JButton -> add button to panel -> make ActionListener -> add listener to button
+
+JPanel
+it is a container that can store a group of components. The main task of JPanel is to organize components, various layouts can be set in JPanel which provide better organization of components
+
+JButton
+just button
+
+ActionListener
+uses to listen action on button
+
+EventHandler
+analog of ActionListener 
+check example in package
+
+LookAndFeel
+just for UI styles
+
+WindowListener
+we can use this interface and override methods but also we can use abstract class WindowAdapter
+jFrame.addWindowListener(new WindowAdapter() {
+            @Override
+            public void windowClosing(WindowEvent e) {
+                do smth
+            }
+        });
+
+
+Actions
+check example in package
+
+KeyStroke 
+hot keys to do smth also we need use InputMap to choose focus for example
+check example int package in Actions
+make keystroke -> make InputMap -> initalize InputMap with jPanel and JComponent -> put into InputMap keystroke and name object -> make ActionMap -> put into ActionMap object and Action
+check example in ActionExamples
+
+MouseListener
+check example in package
+
+TextFields
+
+JTextField
+just text field
+JLabel - just label
+JPasswordFiels - like usual textfield but for passwords
+JTextArea - are where we can write text. 1st param - lines, 2nd - columns
+JScrollPane - uses to work with JTextArea
+check example in package
+
+
+JCheckBox, JRadioButton and Group, Border and ComboBox, Slider
+uses for multiple choice
+check example
+
+Menu
+check example
+

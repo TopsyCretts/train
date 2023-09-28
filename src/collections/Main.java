@@ -1,6 +1,6 @@
-package xml;
+package collections;
 
-public class XPathEx {
+public class Main {
     public static void main(String[] args) {
 
     }
