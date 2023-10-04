@@ -1,0 +1,37 @@
+Books
+id       name        author
+1       Inferno      Dan Brown
+2       Solomon Key  Dan Brown
+
+select * from Books
+id       name        author
+1       Inferno      Dan Brown
+2       Solomon Key  Dan Brown
+
+select name from Books
+Inferno
+Solomon Key
+
+select id, name from Books
+1       Inferno
+2       Solomon Key
+
+select * from Books where id = 1
+1       Inferno      Dan Brown
+
+select name from Books where id = 1
+Inferno
+
+insert into Books (name, author) values Holy Bible, God
+Books
+id       name        author
+1       Inferno      Dan Brown
+2       Solomon Key  Dan Brown
+3       Holy Bible      God
+
+update Books set name = "Solomon" where id = 2
+Books
+id       name        author
+1       Inferno      Dan Brown
+2       Solomon      Dan Brown
+3       Holy Bible      God
